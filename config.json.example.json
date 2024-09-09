@@ -1,0 +1,6 @@
+{
+	"token": "DISCORD_BOT_TOKEN",
+    "bot_id": "DISCORD_BOT_ID",
+    "allow_channels": ["RECORD_CHANNEL_ID"],
+    "GAS_LINK": "GAS_LINK"
+}

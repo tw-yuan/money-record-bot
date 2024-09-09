@@ -1,1 +1,1 @@
-"# money-record-bot" 
+# Discord 記帳機器人
