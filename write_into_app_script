@@ -1,0 +1,27 @@
+var ss = SpreadsheetApp.getActiveSpreadsheet(),
+  sheet1 = ss.getSheetByName("大學"); // "sheet1" 改成你的工作表名稱
+
+function doPost(e) {
+  var para = e.parameter, // 存放 post 所有傳送的參數
+    method = para.method;
+
+  if (method == "write") {
+    write_data(para);
+  }
+}
+function doGet(e) {
+  var para = e.parameter, // 存放 post 所有傳送的參數
+    method = para.method;
+
+  if (method == "write") {
+    write_data(para);
+  }
+}
+function write_data(para) {
+  var data = para.data,
+    reason = para.reason,
+    amount = para.amount;
+  sheet1.appendRow([data, reason, amount]); // 插入一列新的資料
+}
+
+
